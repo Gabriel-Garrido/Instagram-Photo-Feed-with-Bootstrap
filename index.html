@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Instagram Photo Feed with Bootstrap</title>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav id="header" class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+        <div class="container mx-0">
+          <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <div class="collapse navbar-collapse d-flex justify-content-end mx-0" id="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                <button class="btn btn-success" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+                </li>
+                <li class="nav-item dropdown bg-secondary rounded-3">
+                    <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"> <i class="fa-solid fa-gear"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item link-danger" href="#">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>  
+        </div>  
+    </nav>
+    <!-- /Navbar -->
+
+    <!-- Tabs -->
+
+    <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-square"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-th"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            <!-- Fotos columna -->
+
+            <div class="container">
+
+                <!-- Foto 1 columna -->
+
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between p-0">
+                                <h2 class="h5 ps-2 pt-2">Mi primera foto</h2>
+                                <p>08/26</p>
+                            </div>
+                            <div class="card-body p-0 mb-2">
+                                <img src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/kraken_generic_max_width_960/public/01_%C2%BFQu%C3%A9-puedo-hacer-si-mi-gato-est%C3%A1-triste-.png?itok=cOA5aYW-" class="card-img-top m-0" alt="...">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="fs-6">Liked by <strong>Gabriel, Suvliminal, </strong>and <strong>500k others</strong></p>
+                                <footer class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend enim feugiat, sollicitudin ligula quis!</footer>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 2 columna -->
+
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between p-0">
+                                <h2 class="h5 ps-2 pt-2">Foto de ampolleta</h2>
+                                <p>05/14</p>
+                            </div>
+                            <div class="card-body p-0 mb-2">
+                                <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" class="card-img-top m-0" alt="...">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="fs-6">Liked by <strong>Gabriel, Suvliminal, </strong>and <strong>3k others</strong></p>
+                                <footer class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend enim feugiat, sollicitudin ligula quis!</footer>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 3 columna -->
+
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between p-0">
+                                <h2 class="h5 ps-2 pt-2">Letras de neon</h2>
+                                <p>09/08</p>
+                            </div>
+                            <div class="card-body p-0 mb-2">
+                                <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="card-img-top m-0" alt="...">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="fs-6">Liked by <strong>Gabriel, Suvliminal, </strong>and <strong>350k others</strong></p>
+                                <footer class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend enim feugiat, sollicitudin ligula quis!</footer>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 4 columna -->
+
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between p-0">
+                                <h2 class="h5 ps-2 pt-2">Ahogado</h2>
+                                <p>03/02</p>
+                            </div>
+                            <div class="card-body p-0 mb-2">
+                                <img src="https://images.unsplash.com/photo-1484100356142-db6ab6244067?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80" class="card-img-top m-0" alt="...">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="fs-6">Liked by <strong>Gabriel, Suvliminal, </strong>and <strong>15k others</strong></p>
+                                <footer class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend enim feugiat, sollicitudin ligula quis!</footer>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 5 columna -->
+
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between p-0">
+                                <h2 class="h5 ps-2 pt-2">Rico café de granos</h2>
+                                <p>01/23</p>
+                            </div>
+                            <div class="card-body p-0 mb-2">
+                                <img src="https://images.unsplash.com/photo-1613336026275-d6d473084e85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="card-img-top m-0" alt="...">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="fs-6">Liked by <strong>Gabriel, Suvliminal, </strong>and <strong>68k others</strong></p>
+                                <footer class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend enim feugiat, sollicitudin ligula quis!</footer>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 6 columna -->
+
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between p-0">
+                                <h2 class="h5 ps-2 pt-2">Manzana roja</h2>
+                                <p>12/12</p>
+                            </div>
+                            <div class="card-body p-0 mb-2">
+                                <img src="https://images.unsplash.com/photo-1587590227264-0ac64ce63ce8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHJhbmRvbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" class="card-img-top m-0" alt="...">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="fs-6">Liked by <strong>Gabriel, Suvliminal, </strong>and <strong>2k others</strong></p>
+                                <footer class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend enim feugiat, sollicitudin ligula quis!</footer>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- /Fotos columna -->
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            
+            <!-- Fotos grilla -->
+            
+            <div class="container">
+                <div class="row">
+                    <!-- grilla 1 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/kraken_generic_max_width_960/public/01_%C2%BFQu%C3%A9-puedo-hacer-si-mi-gato-est%C3%A1-triste-.png?itok=cOA5aYW-" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 2 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 3 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 4 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1484100356142-db6ab6244067?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 5 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1613336026275-d6d473084e85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=8" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 6 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1587590227264-0ac64ce63ce8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHJhbmRvbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 7 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1467139840664-96b244a66825?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fHJhbmRvbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 8 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1503751071777-d2918b21bbd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 9 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 10 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1612814621951-b24b753ca716?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 11 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1554570731-63bcddda4dcd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- grilla 12 -->
+                    <div class="col-4">
+                        <div class="card-body p-0 mx-1 my-3">
+                            <img src="https://images.unsplash.com/photo-1503792070985-b4147d061915?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1646&q=80" class="card-img-top m-0" alt="..." style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- /Fotos grilla -->
+              
+        </div>
+      </div>
+
+    <!-- /Tabs -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                  </div>
+                <div class="container">
+                    <button class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                    <button class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- /Modal -->
+
+    <!-- Bootstrap Bundle with Popper and Font Awesome -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68e18b352a.js" crossorigin="anonymous"></script>
+  </body>
+</html>
